@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Alimentos {
+    public static void main(String[] args) {
+        ArrayList<String> frutas = new ArrayList<String>();
+        frutas.add("Manzana");
+        frutas.add("Plátano");
+        frutas.add("Uva");
+        frutas.add("Fresa");
+        frutas.add("Mango");
+        frutas.add("Guayaba");
+        frutas.add("Coco");
+        frutas.add("Melón");
+        frutas.add("Sandía");
+        frutas.add("Kiwi");
+        
+        Collections.sort(frutas);
+        System.out.println("Lista de frutas: " + frutas);
+        
+        System.out.println("El primer elemento es: " + frutas.get(0));
+        
+        frutas.add(0, "Naranja");
+        System.out.println("La nueva lista es: " + frutas);
+        
+        System.out.println("Tamaño de la lista: " + frutas.size());
+        
+        System.out.println("El índice de 'Fresa' es: " + frutas.indexOf("Fresa"));
+        
+        frutas.remove(4);
+        System.out.println("Lista de frutas después de eliminar el elemento en índice 4: " + frutas);
+        
+        System.out.println("¿La lista de frutas está vacía? " + frutas.isEmpty());
+        
+        frutas.clear();
+        System.out.println("Elementos de la lista después de limpiarla: " + frutas);
+        
+        System.out.println("¿La lista de frutas está vacía ahora? " + frutas.isEmpty());
+    }
+}
